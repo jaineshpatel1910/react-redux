@@ -1,10 +1,11 @@
-const { BUY_CAKE } = require("./cakeType")
+// const { BUY_CAKE } = require("../type")
+import { BUY_CAKE } from "../type"
 
-const initialState = {
+const initialCakeState = {
     numberOfCakes: 10
 }
 
-const cakeReducer = (state = initialState, action) => {
+const cakeReducer = (state = initialCakeState, action) => {
     switch (action.type) {
         case BUY_CAKE: return {
             ...state,
